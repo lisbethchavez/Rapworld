@@ -1,0 +1,79 @@
+/* index.css */
+
+/* Fondo de la página con color rosa pastel */
+body {
+  background-color: #ffe6f1; /* Fondo rosa pastel */
+  font-family: 'Arial', sans-serif; /* Fuente general para todo el texto */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar todo el contenido */
+  align-items: center; /* Alinear verticalmente */
+  height: 100vh; /* 100% del alto de la ventana */
+}
+
+/* Contenedor principal para los cuadros de los artistas */
+.artist-profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* Centrar los cuadros de los artistas */
+}
+
+/* Estilo de cada tarjeta de artista */
+.artist-card {
+  background-color: #ffffff; /* Fondo blanco para cada tarjeta */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.artist-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título de la aplicación */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilos para el título y los detalles dentro de cada tarjeta de artista */
+.artist-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif; /* Estilo de fuente para el nombre del artista */
+  font-weight: bold;
+}
+
+.artist-card p {
+  color: #555;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.artist-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.artist-card iframe {
+  margin-top: 15px;
+  border-radius: 5px; /* Bordes redondeados para el video */
+}

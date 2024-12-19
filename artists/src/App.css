@@ -1,0 +1,50 @@
+/* App.css */
+
+/* Contenedor principal para los cuadros de los artistas */
+.artist-profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo de cada tarjeta de artista */
+.artist-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.artist-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el título y los detalles */
+.artist-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.artist-card p {
+  color: #555;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.artist-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.artist-card iframe {
+  margin-top: 15px;
+}
